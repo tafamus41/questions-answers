@@ -1,6 +1,9 @@
-
 const Header = () => {
-  return <div>Questions and Answer</div>;
+  return (
+    <div>
+      <h1 className="text-center text-primary">Frequently Asked Questions</h1>
+    </div>
+  );
 };
 
 export default Header;
