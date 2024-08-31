@@ -1,12 +1,6 @@
 
-
 const Header = () => {
-  return (
-    <div>Header
+  return <div>Questions and Answer</div>;
+};
 
-        
-    </div>
-  )
-}
-
-export default Header
+export default Header;
