@@ -14,9 +14,9 @@ const Questions = () => {
   return (
     <Container>
       {questions.map((item, index) => (
-        <Row key={item.id}>
+        <Row className="questionRow border border-3 my-3" key={item.id}>
           <Col sm={8}>{item.question}</Col>
-          <Col onClick={() => toggle(index)} sm={4}>
+          <Col className="text-end" onClick={() => toggle(index)} sm={4}>
             {visible === index ? arrowup : arrowdown}
           </Col>
           {visible === index && <Col sm={12}>{item.answer}</Col>}

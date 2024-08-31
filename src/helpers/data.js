@@ -25,7 +25,7 @@ const questions = [
     },
     {
       id: 5,
-      question: 'What are Higher Order Components(HOC)?',
+      question: 'Does this app offer GPS guidance for my Helsinki-Rovaniemi?',
       answer:
         'Download this mobile app from the AppStore or Google Play for the guidance on your Helsinki - Rovaniemi journey. This app includes maps and routes with real-time traffic info, GPS navigation with voice guidance and community alerts. You can also transfer your Helsinki - Rovaniemi route calculation from your computer to the app by saving the route as a Favourite in your account.',
     },
