@@ -2,26 +2,26 @@ import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 import questions from "../helpers/data";
-import {arrowdown} from "../helpers/icons";
-import {arrowup} from "../helpers/icons";
-
+import { arrowdown } from "../helpers/icons";
+import { arrowup } from "../helpers/icons";
+import React, { useState } from "react";
 
 const Questions = () => {
-  // console.log(questions);
-  console.log(arrowdown);
+  const [visible, setVisible] = useState(true);
+  const toggle = (index) => {
+    setVisible(visible === index ? true:index);
+  };
   return (
     <Container>
-      <Row>
-        {questions.map((item) => (
-          <>
-            <Col sm={8}>{item.question}</Col>
-            <Col sm={4}>{arrowdown}</Col>
-          </>
-        ))}
-      
-
-        {/* <Col sm={8}>{item.answer}</Col> */}
-      </Row>
+      {questions.map((item, index) => (
+        <Row key={item.id}>
+          <Col sm={8}>{item.question}</Col>
+          <Col onClick={() => toggle(index)} sm={4}>
+            {visible === index ? arrowup : arrowdown}
+          </Col>
+          {visible === index && <Col sm={12}>{item.answer}</Col>}
+        </Row>
+      ))}
     </Container>
   );
 };

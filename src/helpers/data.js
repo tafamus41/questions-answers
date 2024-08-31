@@ -43,7 +43,7 @@ const questions = [
     },
     {
       id: 8,
-      question: 'What the fuckin app is this?',
+      question: 'What is the name of this magic app?',
       answer:
         'It is TAFAMUS 41.If you have more questions please do not hesitate to hit me up',
     },
