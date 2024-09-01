@@ -12,10 +12,15 @@ const InterviewAccord = ({ item }) => {
   return (
     <Row className="questionRow border border-3 my-3">
       <Col sm={8}>{item.question}</Col>
-      {visible && <Col className="text-primary" sm={8}>{item.answer}</Col>}
+
       <Col className="text-end" onClick={toggle} sm={4}>
         {visible ? arrowup : arrowdown}
       </Col>
+      {visible && (
+        <Col className="text-primary answers" sm={12}>
+          {item.answer}
+        </Col>
+      )}
     </Row>
   );
 };

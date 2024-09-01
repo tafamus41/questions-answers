@@ -24,3 +24,6 @@ body{
   cursor: pointer;
   color:yellow;
 }
+.answers{
+  text-align: justify;
+}
